@@ -19,14 +19,15 @@
                 <p class="sign-title">CHECK OUT</p>
                 <p class="sign-text">PROCEDI AL CHECK OUT</p>
                 <label for="time" class="label">ORARIO INGRESSO</label>
-                <input type="time" class="user" placeholder="ORARIO INGRESSO" required>
+                <input type="time" class="user" placeholder="ORARIO INGRESSO" id="oraIngresso" required>
                 <label for="time" class="label">ORARIO USCITA</label>
-                <input type="time" class="pass" placeholder="ORARIO USCITA" required>
-                <input type="submit" class="btn" value="CALCOLA">
+                <input type="time" class="pass" placeholder="ORARIO USCITA" id="oraFine" required>
+                <input type="submit" class="btn" value="CALCOLA" onclick="calcolaPrezzo()">
             </form>
+            <!-- <p id="testo"></p> -->
         </div>
     </div>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
