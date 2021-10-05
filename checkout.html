@@ -7,13 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout Bootstrap</title>
+    <title>Internet Point 2.0 | Checkout</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrapStyle.css">
 </head>
 
 <body>
+
+    <ul class="nav nav-tabs justify-content-center bg-light">
+        <li class="nav-item p-3">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item p-3">
+            <a class="nav-link" href="inserisciCliente.html" style="color: black;">Inserisci Cliente</a>
+        </li>
+        <li class="nav-item p-3">
+            <a class="nav-link" href="modificaCliente.html" style="color: black;">Modifica Cliente</a>
+        </li>
+        <li class="nav-item p-3">
+            <a class="nav-link" href="cancellaCliente.html" style="color: black;">Cancella Cliente</a>
+        </li>
+        <li class="nav-item p-3">
+            <a class="nav-link" href="checkout.html" style="color: black;">Checkout</a>
+        </li>
+    </ul>
 
     <div class="container">
         <div class="row content">
@@ -25,6 +43,10 @@
                 <h3 class="signin-text mb-3">CHECK OUT</h3>
                 <form action="">
                     <div class="form-group">
+                        <div class="form-group pb-3">
+                            <input type="text" name="idClientePerCheckout" class="form-control"
+                                id="idClientePerCheckout" placeholder="ID CLIENTE PER ESEGUIRE CHEKOUT">
+                        </div>
                         <label for="time">ORARIO INGRESSO</label>
                         <input type="time" name="orarioIngresso" class="form-control" id="oraIngresso">
                     </div>
@@ -34,7 +56,8 @@
                     </div>
                     <button class="btn btn-class" onclick="calcolaPrezzo()">CALCOLA</button>
                 </form>
-                <!-- <p id="testo"></p> -->
+                <h5 class="signin-text mt-5">LISTA CLIENTI</h5>
+                <ul id="container_items"></ul>
             </div>
         </div>
     </div>

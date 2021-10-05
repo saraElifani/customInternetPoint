@@ -53,3 +53,8 @@ body{
 .btn-class:hover{
     background-color: #00ac96;
 }
+
+#container_items li {
+    margin: 10px;
+   
+}
